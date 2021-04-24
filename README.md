@@ -1,8 +1,8 @@
-# Helium
+# [Helium](https://helium-compressor.herokuapp.com/)
 
 `Helium` is a web application to compress and decode your strings swiftly.
 
-### About
+## About
 
 Most of data on the web is in the form of text formats. To increase the efficiency of the user application, Text Data Compression plays an important role to radically reduce the load time, saves the data on the server and by simple encoding-decoding the the load on frontend and backend - both can be managed.
 
@@ -16,6 +16,49 @@ To note, lossless compression algorithms are ONLY a part of `Helium`, and thus t
 - CSS and JS minifiers (min.js files)
 - Bundlers such as Webpack and rollup.js 
 - Data Preprocessors
+
+## Developer Guide
+
+This section involves information for developers willing to contribute to the project. `Helium` is truly Open Source. Any sort of contribution to this project are highly appreciated. Read the [Contributing Guideline](./CONTRIBUTING.md) to learn more on how to setup development environment, propose bug fixes or improvements and how to build and test your changes to Helium.
+
+### Spinning up local dev setup
+
+- Helium uses Node.js + Express as backend. Run the below commands in the root of your clone.
+```
+npm install
+node server.js
+```
+This should start the server on `PORT 8080`
+
+- React.js is used for the Client Side. Setup the local React env by running below commands
+
+```
+cd client && npm install
+npm start
+```
+This should start the client on `PORT 3000`
+
+## Tech Stack ⚒
+
+* General Technologies used 💻
+  - Frontend Library: React.js
+  - Backend Framework: Express.js
+  - Runtime Env: Node.js
+  - API calls: Axios
+
+* Dependencies for the Compression Algorithms
+  - LZ String Compression: [lz-string](https://github.com/pieroxy/lz-string)
+  - GZIP Compression: [ZLib](https://github.com/madler/zlib)
+  - Run length Encoding: From Scratch Implementation
+ 
+ 
+ 
+
+
+
+
+
+
 
 
 
