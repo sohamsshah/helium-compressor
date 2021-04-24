@@ -44,12 +44,14 @@ This should start the client on `PORT 3000`
   - Frontend Library: React.js
   - Backend Framework: Express.js
   - Runtime Env: Node.js
-  - API calls: Axios
+  - Hosted on: Heroku (with CI/CD enabled on `main`) 
 
 * Dependencies for the Compression Algorithms
   - LZ String Compression: [lz-string](https://github.com/pieroxy/lz-string)
   - GZIP Compression: [ZLib](https://github.com/madler/zlib)
   - Run length Encoding: From Scratch Implementation
+
+
  
  
  
