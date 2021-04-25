@@ -1,0 +1,11 @@
+.textarea{
+    border: 2px solid var(--primary-color);
+    outline: none;
+    font-size: 1rem;
+    border-radius: 0px;
+    box-shadow: inset 1px 1px 3px rgb(0 0 0 / 20%);
+}
+
+.textarea:focus{
+    box-shadow: 5px 1px 5px rgb(0 0 0 / 20%);
+}

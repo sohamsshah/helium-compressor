@@ -1,0 +1,14 @@
+.input-area{
+    display:flex;
+    flex-direction: column;
+}
+.input-area__bottom{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+.bottom__size{
+    margin-left:1rem;
+    font-size: 1.2rem;
+}

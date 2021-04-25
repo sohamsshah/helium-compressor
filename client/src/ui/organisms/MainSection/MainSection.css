@@ -1,0 +1,13 @@
+.main-section{
+    padding:1rem 2rem;
+}
+
+.heading__lead{
+    font-size: 1.2rem;
+    margin:1rem 0;
+    margin-top:-0.5rem;
+}
+
+.inputsection > div{
+    margin:2rem 0; 
+}
