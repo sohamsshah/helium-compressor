@@ -47,9 +47,15 @@ This should start the client on `PORT 3000`
   - Hosted on: Heroku (with CI/CD enabled on `main`) 
 
 * Dependencies for the Compression Algorithms
-  - LZ String Compression: [lz-string](https://github.com/pieroxy/lz-string)
-  - GZIP Compression: [ZLib](https://github.com/madler/zlib)
   - Run length Encoding: From Scratch Implementation
+
+## Future Scope 🚀
+
+- Add LZ String Compression: [lz-string](https://github.com/pieroxy/lz-string)
+- Add GZIP Compression: [ZLib](https://github.com/madler/zlib)
+- Publish the algorithms as an NPM package
+- Find/Add more in Issues/Projects :) 
+  
 
 
  
