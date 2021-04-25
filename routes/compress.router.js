@@ -1,24 +1,18 @@
 const express = require("express");
 const router = express.Router();
 
-const {heliumZip, heliumUnZip} = require("./../utils/compressors/standardCompressor")
+const {compressor} = require("./../middlewares/compress.middleware")
 
 router.use(express.json());
 
-router.route("/")
+router.use("/compress", compressor)
+router.route("/compress")
 .get((req,res) => {
-    res.json({success:true});
+    res.json({success:true, page: "compress"});
 })
 .post((req,res) => {
-  if(req.body.operation === "zip"){
-    const compressed = heliumZip(req.body.inputString);
-    res.json({compressed})
-  }
-  else if(req.body.operation === "unzip"){
-    const uncompressed = heliumUnZip(req.body.inputString);
-    res.json({uncompressed})  
-  }
-  
+
+  res.json({compressed: res.compressed})
 })
 
 module.exports = router

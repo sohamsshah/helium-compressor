@@ -11,10 +11,10 @@ export default function App() {
   }
   async function handleCompress() {
     const { data } = await axios.post(
-      `/api/`,
+      `/api/compress`,
       {
         inputString,
-        operation: "zip"
+        type:"helium"
       }
     );
     console.log(data);
@@ -23,14 +23,14 @@ export default function App() {
 
   async function handleUnCompress() {
     const { data } = await axios.post(
-      `api`,
+      `api/decompress`,
       {
         inputString,
-        operation: "unzip"
+        type:"helium"
       }
     );
     console.log(data);
-    setResult(data.uncompressed);
+    setResult(data.decompressed);
   }
 
   return (

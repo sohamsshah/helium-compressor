@@ -1,4 +1,7 @@
-const heliumZip = (string) => {
+const heliumCompress = (string) => {
+    if(string.trim() === ""){
+      return ""
+    }
     const stringArr = string.split("")
     const state = {curr: stringArr[0], curr_count:0}
     let res = []
@@ -11,17 +14,17 @@ const heliumZip = (string) => {
       }
       state.curr = stringArr[parseInt(char)];
     }
-    res = res = [...res, `${stringArr[parseInt(char)]}${(state.curr_count > 1)?(state.curr_count):""}`].join("")
+    res = res = [...res, `${stringArr[parseInt(char)]}${(state.curr_count > 1)?(state.curr_count):""}`]
   
-    return res;
+    return res.join("");
 }
   
-const heliumUnZip = (string) => {
+const heliumDecompress = (string) => {
   const stringArr = string.split("");
   const state = {curr_digit:"", prev:""}
   let freq = {}
   let res = []
-  for(let char in stringArr){
+  for(char in stringArr){
     if(!(isNaN(parseInt(stringArr[char])))){
       state.curr_digit+=stringArr[char]
       
@@ -44,7 +47,9 @@ const heliumUnZip = (string) => {
   }else{
     res = [...res, ...Array(parseInt(state.curr_digit)).fill(state.prev)]
   }
-  return res.join("")
+  
+  res = res.join("")
+  return res
 }
   
-module.exports = {heliumUnZip, heliumZip}
+module.exports = {heliumCompress, heliumDecompress}
