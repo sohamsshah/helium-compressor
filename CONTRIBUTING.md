@@ -1,4 +1,4 @@
-# Contributing to Sodium-UI
+# Contributing to Helium
 
 Thanks for showing interest in contributing to `Helium` and being part of the community. At `Helium` we aim to make Open Source cake walk for the contributors and are always ready to assist you for all your queries. Here are some guidelines that will help you along the way.
 
