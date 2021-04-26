@@ -1,9 +1,32 @@
-.button{
+.btn{
     font-size: 1rem;
-    background-color: var(--secondary-color);
-    color: white;
     padding:0.5rem;
     border-radius: 4px;
+    
     cursor:pointer;
-    border:solid var(--primary-color) 0.5px;
+    transition:0.2s;
+    color: white;
 }
+
+.btn-primary{
+    background-color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+}
+
+.btn-primary:hover{
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color)
+}
+
+.btn-secondary{
+    background-color: var(--secondary-color);
+    border: solid 1px var(--primary-color);
+}
+
+.btn-secondary:hover{
+    background-color: white;
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color)
+}
+

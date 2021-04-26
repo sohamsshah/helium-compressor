@@ -11,7 +11,7 @@ function InputArea({onInputChange, onButtonClick, textareaContent, children, but
             </div>
             <div className="input-area__bottom">
                 <div>
-                    <Button onClick={onButtonClick} text={buttonText} /> 
+                    <Button variant="secondary" onClick={onButtonClick} text={buttonText} /> 
                 </div>
                 <div className="bottom__size">Size: {textareaContent.length}</div> 
             </div>
