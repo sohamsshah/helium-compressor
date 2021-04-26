@@ -1,6 +1,6 @@
 # [Helium](https://helium-compressor.herokuapp.com/)
 
-`Helium` is a web application to compress and decode your strings swiftly.
+`Helium` is a web application to compress and decompress your strings swiftly.
 
 ## About
 
@@ -19,7 +19,7 @@ To note, lossless compression algorithms are ONLY a part of `Helium`, and thus t
 
 ## Developer Guide
 
-This section involves information for developers willing to contribute to the project. `Helium` is truly Open Source. Any sort of contribution to this project are highly appreciated. Read the [Contributing Guideline](./CONTRIBUTING.md) to learn more on how to setup development environment, propose bug fixes or improvements and how to build and test your changes to Helium.
+This section involves information for developers willing to contribute to the project. `Helium` is truly Open Source. Any sort of contribution to this project are highly appreciated. Read the [Contributing Guideline](./CONTRIBUTING.md) to learn more on how to setup development environment, propose bug fixes or improvements and how to build and test your changes to Helium. The brief explanation of the Compression algorithms used in Helium can be found [here](./ALGORITHM.md). 
 
 ### Spinning up local dev setup
 
@@ -46,8 +46,8 @@ This should start the client on `PORT 3000`
   - Runtime Env: Node.js
   - Hosted on: Heroku (with CI/CD enabled on `main`) 
 
-* Dependencies for the Compression Algorithms
-  - Run length Encoding: From Scratch Implementation
+* Supported Compression Algorithms
+  - [Helium Compressor](https://github.com/sohamsshah/helium-compressor/blob/main/utils/compressors/heliumCompressor.js)
 
 ## Future Scope 🚀
 
@@ -55,20 +55,3 @@ This should start the client on `PORT 3000`
 - Add GZIP Compression: [ZLib](https://github.com/madler/zlib)
 - Publish the algorithms as an NPM package
 - Find/Add more in Issues/Projects :) 
-  
-
-
- 
- 
- 
-
-
-
-
-
-
-
-
-
-
-
