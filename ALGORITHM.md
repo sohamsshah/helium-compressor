@@ -1,6 +1,6 @@
 # ALGORITHM
 
-## Standard Helium Compressor
+## [Standard Helium Compressor](https://github.com/sohamsshah/helium-compressor/blob/main/utils/compressors/heliumCompressor.js)
 
 The Standard Helium Compressor is based on [Run Length Encoding Algorithm](https://en.wikipedia.org/wiki/Run-length_encoding), which is a lossless Data Compression Algorithm. 
 
